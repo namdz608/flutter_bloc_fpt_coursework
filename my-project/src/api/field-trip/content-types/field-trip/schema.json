@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "field_trips",
+  "info": {
+    "singularName": "field-trip",
+    "pluralName": "field-trips",
+    "displayName": "FieldTrip",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "destination": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "date_trip": {
+      "type": "string",
+      "required": true
+    },
+    "risk_assessment": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "phone_number": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "organizational_units": {
+      "type": "string"
+    }
+  }
+}
